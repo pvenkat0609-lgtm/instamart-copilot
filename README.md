@@ -2,18 +2,48 @@
 
 ## Overview
 
-This project builds an offline customer intelligence and support copilot for a simulated grocery-delivery business.
+Instamart Customer Intelligence & Support Copilot
 
-It addresses four business problems:
+An end-to-end offline AI-powered customer intelligence and customer support platform built for a grocery delivery business. The project combines Data Engineering, Machine Learning, NLP, Retrieval-Augmented Generation (RAG), and Agentic AI to improve customer retention, automate support operations, and enable intelligent decision-making.
 
-1. **Data Foundation:** Clean inconsistent customer and order data, load it into SQLite, validate data quality, and perform exploratory analysis.
-2. **Customer Segmentation and Lapse Prediction:** Create RFM-based customer segments, identify lapsed customers, and compare machine-learning models.
-3. **Support Ticket Triage:** Redact sensitive information, classify support tickets, apply input and output guardrails, and route tickets to the appropriate support team.
-4. **Policy RAG and ReAct Agent:** Retrieve relevant policy passages, answer policy questions, calculate refunds, use tools, escalate high-value refunds, and recover from interrupted agent runs.
+This solution is designed to operate entirely offline without dependence on external LLM APIs, making it cost-effective, reproducible, and suitable for enterprise environments.
 
-The project uses Python, pandas, SQLite, scikit-learn, TF-IDF, cosine similarity, and the supplied deterministic `mock_llm.py`.
+🚀 Key Features
+*Data Engineering*
 
-All model interactions are offline. No paid API or external LLM service is required.
+-Automated data cleaning and validation
+-Missing value handling and standardization
+-Referential integrity checks
+-SQLite data warehouse creation
+-Quality assurance reporting
+
+*Customer Intelligence*
+-RFM (Recency, Frequency, Monetary) analysis
+-K-Means customer segmentation
+-Customer persona generation
+-Churn/lapse prediction models
+-Retention strategy recommendations
+
+*Support Automation*
+-Ticket classification and triage
+-Priority detection
+-Customer sentiment handling
+-PII redaction guardrails
+-Automated ticket routing
+-Knowledge Assistant (RAG)
+
+*Policy document indexing*
+-TF-IDF vector retrieval
+-Context-aware question answering
+-Source-grounded responses
+-Hallucination prevention
+-Agentic Refund System
+
+*ReAct-style reasoning and tool usage*
+-Automatic refund eligibility checks
+-Human escalation workflow
+-Checkpoint recovery
+-Audit logging
 
 ## Reproduce
 
@@ -627,5 +657,6 @@ I chose ReAct because each refund decision depends on the previous result: order
 - Evaluate semantic retrieval alongside TF-IDF using a broader set of policy questions.
 - Test the agent against additional edge cases and real operational workflows, with audit logs and human approval for sensitive actions.
 - If comparing ReAct with plan-and-execute, implement and evaluate both approaches under the same scenarios and token limits.
-#   i n s t a m a r t - c o p i l o t  
+#   i n s t a m a r t - c o p i l o t 
+ 
  
