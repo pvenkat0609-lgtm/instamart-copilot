@@ -627,3 +627,5 @@ I chose ReAct because each refund decision depends on the previous result: order
 - Evaluate semantic retrieval alongside TF-IDF using a broader set of policy questions.
 - Test the agent against additional edge cases and real operational workflows, with audit logs and human approval for sensitive actions.
 - If comparing ReAct with plan-and-execute, implement and evaluate both approaches under the same scenarios and token limits.
+#   i n s t a m a r t - c o p i l o t  
+ 
