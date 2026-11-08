@@ -1,0 +1,20 @@
+{
+  "run_id": "test_timeout",
+  "messages": [
+    {
+      "role": "system",
+      "content": "AGENT: You are an Instamart customer support agent. Use the available tools to inspect orders, retrieve policies, calculate refunds, issue eligible refunds, and escalate refunds above INR 1000. Never invent order details or refund amounts. Only completed orders delivered in more than 45 minutes qualify for a late-delivery refund. Cancelled orders are not refundable. Refunds above INR 1000 require human approval."
+    },
+    {
+      "role": "user",
+      "content": "Customer ID: C0007\nRequest: My order ORD-100048 reached me very late. I would like a refund."
+    }
+  ],
+  "steps": [],
+  "llm_calls": 0,
+  "tokens_used": 0,
+  "tool_names": [],
+  "tool_execution_count": 0,
+  "status": "FALLBACK_TIMEOUT",
+  "final_answer": "Human review required: agent time limit reached."
+}
